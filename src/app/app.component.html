@@ -1,0 +1,115 @@
+<!-- <h1>Angular</h1>
+<h2>{{title}}</h2> -->
+<!-- <app-user-list></app-user-list> -->
+
+<!-- <button (click)="getName('click button')">click</button><br><br>
+<input type="text" #input (keyup.enter)="getName(input.value)"><br><br>
+<input type="text" #input2 (keydown.enter)="getName(input2.value)"><br><br>
+<input type="text" (blur)="getName('blur')">
+<div (mouseleave)="getName('mouse')" style="background-color:rgb(3, 247, 255) ;">mouse</div> -->
+
+<!-- <input type="text" #box>
+<button (click)="getVal(box.value)">click me</button>
+
+<h2>{{creat}}</h2> -->
+
+<!-- <div *ngIf="show==='no'; then ifBlock else elseBlock">
+</div>
+<ng-template #ifBlock>
+    <h1>true</h1>
+</ng-template>
+<ng-template #elseBlock>
+    <h1>false</h1>
+</ng-template> -->
+
+<!-- <div [ngSwitch]="color">
+    <h1 style="color: red;" *ngSwitchCase="'red'">
+        red color
+    </h1>
+    <h1 style="color: yellow;" *ngSwitchCase="'yellow'">
+        yellow color
+    </h1>
+    <h1 style="color: blue;" *ngSwitchCase="'blue'">
+        blue color
+    </h1>
+
+</div> -->
+
+<!-- <app-header-bar></app-header-bar>
+<h1>Make in header and footer</h1>
+<app-footer-bar></app-footer-bar> -->
+
+<!-- <div class="container">
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[0]" alt="Random first slide" style="width: 100%;">
+            </div>
+            <div class="carousel-caption">
+                <h3>First slide label</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[1]" alt="Random second slide" style="width: 100%;">
+            </div>
+            <div class="carousel-caption">
+                <h3>Second slide label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="images[2]" alt="Random third slide" style="width: 100%;">
+            </div>
+            <div class="carousel-caption">
+                <h3>Third slide label</h3>
+                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div> -->
+
+<!-- <h2>silder</h2>
+<mat-slider aria-label="unit(s)"></mat-slider>
+
+<div>
+    <h2>Button</h2>
+    <button mat-raised-button color="primary" class="mx-1">Button</button>
+    <button mat-raised-button color="accent" class="mx-1">Button</button>
+    <button mat-raised-button color="warn" class="mx-1">Button</button>
+    <a mat-raised-button href="#" target="_blank" class="mx-1">Link</a>
+</div>
+<div class="mt-2">
+    <h2>icon button</h2>
+    <button class="mx-1" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+        <mat-icon>delete</mat-icon>
+    </button>
+    <button class="mx-1" mat-fab color="accent" aria-label="Example icon button with a delete icon">
+        <mat-icon>bookmark</mat-icon>
+    </button>
+    <button class="mx-1" mat-fab color="warn" aria-label="Example icon button with a home icon">
+        <mat-icon>home</mat-icon>
+    </button>
+    <button class="mx-1" mat-fab disabled aria-label="Example icon button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+</div>
+<div class="mt-2">
+    <mat-slider min="1" max="5" step="0.5" value="1.5"></mat-slider>
+</div> -->
+<!-- <div class="container  text-center mt-5 mb-5">
+    <h1>Bootstrap 5 is working fine with Angular 13!!</h1>
+</div> -->
+
+<!-- <h1>parent to child</h1>
+<div *ngFor="let x of data">
+    <app-user-list [item]="x"></app-user-list>
+</div> -->
+
+<h1>child to parent</h1>
+<app-user-list (parentFunction)="parentComponent($event)"></app-user-list>
+<br><br><br>
+<h3>{{name}}</h3>
+<h3>{{age}}</h3>
